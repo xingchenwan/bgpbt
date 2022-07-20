@@ -80,7 +80,6 @@ still wait for the entire population to finish before running the next iteration
 
 `-ni`: number of initialising agents
 
-`-o --optimizer`: bgpbt/pbt/pb2
 
 ### Ablation studies
 
