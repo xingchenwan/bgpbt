@@ -16,7 +16,7 @@
 **Link to paper**:
 [Bayesian Generational Population-Based Training](https://openreview.net/forum?id=HW4-ZaHUg5)
 
-**Authors**: Xingchen Wan, Cong Lu, Jack Parker-Holder, Philip J. Ball, Vu Nguyen, Binxin Ru, Michael A. Osborne
+**Authors**: [Xingchen Wan](https://www.robots.ox.ac.uk/~xwan/), [Cong Lu](https://www.conglu.co.uk/), [Jack Parker-Holder](https://jparkerholder.github.io/), [Philip J. Ball](https://scholar.google.co.uk/citations?user=5Cm8L90AAAAJ&hl=en/), [Vu Nguyen](http://vu-nguyen.org/), [Binxin Ru](https://rubinxin.github.io/), [Michael A. Osborne](https://www.robots.ox.ac.uk/~mosb/)
 
 In Proceedings of the _First International Conference on Automated Machine Learning (AutoML-Conf)_, 2022.
 
