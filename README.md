@@ -97,8 +97,3 @@ python3 main.py -v -e fetch --pop_size 8 -mp 4 -qf 0.125 -ni 24 -exist overwrite
 python3 main.py -v -e reacher --pop_size 8 -mp 4 -qf 0.125 -ni 24 -exist overwrite -tr 1_000_000 -mt 150_000_000 -o bgpbt --seed {0,1,2,3,100,200,300} -sm hpo
 python3 main.py -v -e ur5e --pop_size 8 -mp 4 -qf 0.125 -ni 24 -exist overwrite -tr 1_000_000 -mt 150_000_000 -o bgpbt --seed {0,1,2,3,100,200,300} -sm hpo
 ```
-
-### Checkpoints to visualize the policies
-
-We include some checkpoints in `./ckpts` and a notebook to quickly render policies found by BGPBT.
-Animations & more contents may be found in https://sites.google.com/view/bgpbt
