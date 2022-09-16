@@ -47,6 +47,9 @@ However, we did not thoroughly test on CPU-only builds.
 **Particular attention should be paid to Brax** -- a package that is still very much under active development.
 Different versions often lead to significant discrepancies in the results - **our paper uses the 0.10.0 version**.
 
+## Raw logs, notebook to reproduce figure/render policy, and checkpoints
+You may access the raw logs from BG-PBT [here](https://drive.google.com/drive/folders/1vy2Y36_PYnVsWgf9iyKAXW6IDSN77Hzw?usp=sharing) at a standalone Google Drive (~900MB). The link contains the raw csv logs, scripts to process the logs, the notebook to reproduce the main results figures. The link also contains all checkpoints (every agent of every seed of every environment) where you may use the provided notebook to render the policy. Note that rerunning the experiments might lead to slightly different results due to some remaining stochasticities (most notably the distillation procedure can be very sensitive to small changes in environment).
+
 ## Scripts to run experiments in the paper
 
 ### Main experiments
@@ -80,7 +83,6 @@ still wait for the entire population to finish before running the next iteration
 
 `-ni`: number of initialising agents
 
-`-o --optimizer`: bgpbt/pbt/pb2
 
 ### Ablation studies
 
@@ -95,8 +97,3 @@ python3 main.py -v -e fetch --pop_size 8 -mp 4 -qf 0.125 -ni 24 -exist overwrite
 python3 main.py -v -e reacher --pop_size 8 -mp 4 -qf 0.125 -ni 24 -exist overwrite -tr 1_000_000 -mt 150_000_000 -o bgpbt --seed {0,1,2,3,100,200,300} -sm hpo
 python3 main.py -v -e ur5e --pop_size 8 -mp 4 -qf 0.125 -ni 24 -exist overwrite -tr 1_000_000 -mt 150_000_000 -o bgpbt --seed {0,1,2,3,100,200,300} -sm hpo
 ```
-
-### Checkpoints to visualize the policies
-
-We include some checkpoints in `./ckpts` and a notebook to quickly render policies found by BGPBT.
-Animations & more contents may be found in https://sites.google.com/view/bgpbt
