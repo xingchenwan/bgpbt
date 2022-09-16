@@ -112,7 +112,7 @@ class Brax(SearchSpace):
                     cs.add_hyperparameter(use_spectral_norm)
                 if self.use_categorical:
                     num_hidden_layers = CSH.CategoricalHyperparameter(f'NAS_{net}_num_layers', choices=list(
-                        range(self.min_n_hidden_layers, self.max_n_hidden_layers+1)))
+                        range(self.min_n_hidden_layers, self.max_n_hidden_layers + 1)))
                 else:
                     num_hidden_layers = CSH.UniformIntegerHyperparameter(f'NAS_{net}_num_layers', self.min_n_hidden_layers,
                                                                          self.max_n_hidden_layers, default_value=2)

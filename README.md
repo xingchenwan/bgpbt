@@ -35,12 +35,17 @@ url={https://openreview.net/forum?id=HW4-ZaHUg5}
 
 ## Dependencies
 
-We provide a requirements file at `requirements.txt` which may be used as follows:
-
+Install the dependencies in this order:
 ```
-conda create --name bgpbt --file requirements.txt
+pip install ConfigSpace joblib smac GPy pandas
+pip install brax==0.10.0
+pip install torch==1.9.0+cu111 gpytorch -f https://download.pytorch.org/whl/torch_stable.html
+pip install --upgrade jax==0.2.21 jaxlib==0.1.72+cuda111 -f https://storage.googleapis.com/jax-releases/jax_releases.html
+pip install stable-baselines3[extra]
+pip install Box2D
 ```
 
+We provide a requirements file at `requirements.txt` which can be used to check for consistency in the environment.
 For a CPU-only version, please change `requirements.txt` to `requirements_cpu.txt`.
 However, we did not thoroughly test on CPU-only builds.
 

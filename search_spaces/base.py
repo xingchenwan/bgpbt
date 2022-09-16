@@ -15,4 +15,3 @@ class SearchSpace:
     @abstractmethod
     def train_batch(self, configs: List[Configuration], exp_idx_start: int, **kwargs):
         pass
-
